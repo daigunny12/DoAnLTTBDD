@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/imageviewbackgrounbannernen"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        >
+
+    </ImageView>
+
+    <ImageView
+        android:layout_margin="20dp"
+        android:scaleType="fitXY"
+        android:id="@+id/imageviewbackgrounbanner"
+        android:layout_width="match_parent"
+        android:layout_height="210dp">
+
+    </ImageView>
+
+    <View
+    android:layout_margin="20dp"
+    android:background="@drawable/custom_background_banner"
+    android:layout_width="match_parent"
+    android:layout_height="210dp">
+</View>
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_alignBottom="@+id/imageviewbackgrounbanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/imageviewbanner"
+            android:layout_width="10dp"
+            android:layout_height="70dp"
+            android:padding="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
+
+        </ImageView>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="em khong sai chung ta sai"
+            android:textSize="17sp"
+            android:id="@+id/textviewtilebannerbaihat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignTop="@+id/imageviewbanner"
+            android:layout_toRightOf="@+id/imageviewbanner" >
+
+        </TextView>
+        <RelativeLayout
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/imageviewbanner"
+            android:layout_below="@id/textviewtilebannerbaihat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textviewnoidung"
+                android:textColor="#FFFFFF"
+                android:text="chao ban da den voi ca khuc moi cua ca si "
+                android:maxLines="2"
+                android:layout_marginRight="40dp"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

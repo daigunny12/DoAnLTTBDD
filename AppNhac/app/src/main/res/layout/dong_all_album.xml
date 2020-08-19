@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/imgeviewAllAlbum"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_width="180dp"
+            android:layout_height="180dp">
+
+        </ImageView>
+    </FrameLayout>
+
+    <TextView
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="Nhac Viet hot nhat trong thang"
+        android:layout_gravity="left"
+        android:maxWidth="200dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:id="@+id/textviewTenAllAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:id="@+id/textviewtencasiplaylist"
+        android:textSize="13sp"
+        android:text="various Artists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+</LinearLayout>
